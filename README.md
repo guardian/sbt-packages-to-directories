@@ -1,4 +1,4 @@
-# sbt-packages-to-directories [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.gu/sbt-packages-to-directories_2.12/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/com.gu/sbt-packages-to-directories_2.12)
+# sbt-packages-to-directories [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.gu/sbt-packages-to-directories_2.12_1.0/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/com.gu/sbt-packages-to-directories_2.12_1.0)
 
 Add under `project/plugins.sbt`
 
@@ -18,7 +18,7 @@ val packageStructureToDirectoryStructure = taskKey[Unit]("Make directory structu
 ```
  
 which reads through source files, extracts their package statements, and then moves the file to the matching
-directory structure. For example,
+directory structure. Make sure to backup the project before executing it as file are moved around.  For example,
 
 ```scala
 package vim.users
